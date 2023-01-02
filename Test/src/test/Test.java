@@ -4,17 +4,21 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		int i = 10;
-		String s;
-				
-		s = String.valueOf(i); 
-		System.out.println(s);
+		String s = "10.0";
+		float f;
+		double d;
 		
-		s = Integer.toString(i); 
-		System.out.println(s);
+		f = Float.parseFloat(s);
+		System.out.println(f); //10
 		
-		s = ""+i;
-		System.out.println(s);
+		d = Double.parseDouble(s);
+		System.out.println(d); //10
+		
+		f = Float.valueOf(s);
+		System.out.println(f); //10
+		
+		d = Double.valueOf(s);
+		System.out.println(d); //10
 
 
 	}
